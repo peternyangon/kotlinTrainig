@@ -35,8 +35,60 @@ fun main() {
             println("have no idea where you belong")
         }
 
-
     }
+    val numbers = listOf<String>("peter","simon","sifa")
+    println(numbers.size)
+
+    println(numbers.get(0))
+
+    println(numbers.stream())
+   println( numbers.first())
+    println(numbers.contains("peter"))
+
+    val namesis= arrayListOf<String>("peter","simon","joshua")
+    namesis.add("millicent")
+    namesis.add("paul")
+    namesis.add("elizabeth")
+    println(namesis)
+    namesis.add(0,"fredrick")
+    println(namesis)
+    namesis.sort()
+    println(namesis)
+
+    var integetNum = mutableListOf<String>("Chon","jacky","andriana","lume","victoria")
+    integetNum.add("simon")
+    integetNum.add("peter")
+    integetNum.add("juan")
+    println(integetNum)
+
+    integetNum.sort()
+    println(integetNum)
+
+    println(integetNum[1])
+
+    println(numbers[1])
+
+    var mapOfNames= mapOf<String,String>("peter" to "nyangon","simon" to "nyangon","joshua" to "nyangon")
+    println(arrayListOf(mapOfNames.values))
+    println(arrayListOf(mapOfNames.keys))
+
+    println(mapOfNames.getOrDefault("fredrick","this name doesnt exist"))
+    
+//null operation in kotlin
+    var name1 ="peter"
+    name1= null.toString()
+    var name2:String?="simon"
+
+
+    println(name2?.length)
+    var name3=name2?.length?:"name doest exist"
+    println(name3)
+
+    println(name2!!.length)
+
+    name3 = if (name2!=null) name2.length else -1
+
+    println(name3)
 
 
 
