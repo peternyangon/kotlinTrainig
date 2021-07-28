@@ -99,6 +99,18 @@ fun main() {
     println(student.name)
     println(student.nameAge())
 
+    println(student.toString())
+
+    val student2 = TrainingClass("simon Nyangon",55)
+    println(student.equals(student2))
+
+    var student3=student
+    println(student3)
+
+    student3.copy(student)
+    println(student3)
+
+
 }
 
 fun names(name1:String,name2:String):String{
