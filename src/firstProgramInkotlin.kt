@@ -93,6 +93,11 @@ fun main() {
 
 
     println(contentEquals)
+    var student = TrainingClass("peter nyangon",34)
+
+    println(student.age)
+    println(student.name)
+    println(student.nameAge())
 
 }
 
