@@ -21,6 +21,23 @@ fun main() {
     val contains = peter.contains("my", ignoreCase = true)
     println(contains)
     println(peter.uppercase())
+    val first="peter"
+    var isTrue=true
+
+    var x=1
+
+    when  (x){
+        1 -> {
+            println("come home")
+            println("you are a bright student")
+        }
+        2 -> {
+            println("have no idea where you belong")
+        }
+
+
+    }
+
 
 
     println(contentEquals)
